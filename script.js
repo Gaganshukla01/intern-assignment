@@ -1,10 +1,11 @@
-console.log('This is drag and drop utility');
+
 
 const imgBox = document.querySelector('.imgBox');
 const whiteBoxes = document.getElementsByClassName('whiteBox');
 const button=document.getElementById('btn');
 
 // Event listeners for draggable element imgBox
+
 imgBox.addEventListener('dragstart', (e) => {
     console.log('DragStart has been triggered');
     e.target.className += ' hold';
@@ -19,23 +20,23 @@ imgBox.addEventListener('dragend', (e) => {
     e.target.className = 'imgBox';
 });
 
-for (whiteBo of whiteBoxes) {
-    whiteBo.addEventListener('dragover', (e) => {
+for (whiteBox of whiteBoxes) {
+    whiteBox.addEventListener('dragover', (e) => {
         e.preventDefault();
         console.log('DragOver has been triggered');
     });
 
-    whiteBo.addEventListener('dragenter', (e) => {
+    whiteBox.addEventListener('dragenter', (e) => {
         console.log('DragEnter has been triggered');
         e.target.className += ' dashed'; 
     })
 
-    whiteBo.addEventListener('dragleave', (e) => {
+    whiteBox.addEventListener('dragleave', (e) => {
         console.log('DragLeave has been triggered');
         e.target.className = 'whiteBox'
     })
 
-    whiteBo.addEventListener('drop', (e) => {
+    whiteBox.addEventListener('drop', (e) => {
         console.log('Drop has been triggered');
         e.target.append(imgBox);
         alert("Sucessfully drop")
