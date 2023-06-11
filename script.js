@@ -1,6 +1,7 @@
 
 
 const imgBox = document.querySelector('.imgBox');
+
 const whiteBoxes = document.getElementsByClassName('whiteBox');
 const button=document.getElementById('btn');
 
@@ -15,10 +16,12 @@ imgBox.addEventListener('dragstart', (e) => {
 
 });
 
+
 imgBox.addEventListener('dragend', (e) => {
     console.log('DragEnd has been triggered');
     e.target.className = 'imgBox';
 });
+
 
 for (whiteBox of whiteBoxes) {
     whiteBox.addEventListener('dragover', (e) => {
@@ -33,7 +36,7 @@ for (whiteBox of whiteBoxes) {
 
     whiteBox.addEventListener('dragleave', (e) => {
         console.log('DragLeave has been triggered');
-        e.target.className = 'whiteBox'
+        e.target.className += 'whiteBox';
     })
 
     whiteBox.addEventListener('drop', (e) => {
@@ -41,6 +44,7 @@ for (whiteBox of whiteBoxes) {
         e.target.append(imgBox);
         alert("Sucessfully drop")
     })
+ 
 }
 
 button.addEventListener('click',()=>{
@@ -49,3 +53,5 @@ button.addEventListener('click',()=>{
         location.reload();
     }
 })
+
+

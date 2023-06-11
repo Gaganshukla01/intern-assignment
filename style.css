@@ -7,31 +7,18 @@ body{
     position: relative;
     top: 7px;
     left: 5px;
-    height: 206px;
-    width: 394px;
+    height: 192px;
+    width: 272px;
     margin-bottom: 2px;
     cursor: pointer;
 }
-.imgBox1{
-    background-image: url("./image.jpg");
-    position: relative;
-    top: 7px;
-    left: 5px;
-    height: 206px;
-    width: 394px;
-    margin-bottom: 2px;
-    cursor: pointer;
-}
-.imgBox img{
-    height: 206px;
-    width: 394px;   
-}
+
 
 
 .whiteBox{
     display: inline-block;
-    height: 637px;
-    width: 405px;
+    height: 549px;
+    width: 285px;
     margin: 10px;
     background-color: white;
     border: 3px black solid;
@@ -72,7 +59,7 @@ body{
     cursor: pointer;
     color: green;
     background-color: aqua;
-    
+
 }
 
 
