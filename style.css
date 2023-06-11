@@ -1,0 +1,78 @@
+body{
+    background: darkslateblue;
+}
+
+.imgBox{
+    background-image: url("./image.jpg");
+    position: relative;
+    top: 7px;
+    left: 5px;
+    height: 206px;
+    width: 394px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.imgBox1{
+    background-image: url("./image.jpg");
+    position: relative;
+    top: 7px;
+    left: 5px;
+    height: 206px;
+    width: 394px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.imgBox img{
+    height: 206px;
+    width: 394px;   
+}
+
+
+.whiteBox{
+    display: inline-block;
+    height: 637px;
+    width: 405px;
+    margin: 10px;
+    background-color: white;
+    border: 3px black solid;
+}
+
+
+
+.hold{
+    border: solid red 4px;
+}
+
+.dashed{
+    background: rgb(214, 206, 206);
+    border-style: dashed;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+   
+
+#btn {
+    background: brown;
+    color: cornsilk;
+    font-size: larger;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    width: 96px;
+
+}
+#btn:hover{
+    cursor: pointer;
+    color: green;
+    background-color: aqua;
+    
+}
+
+
